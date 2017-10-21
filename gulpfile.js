@@ -11,8 +11,6 @@ var gulp = require('gulp'),
     notify = require('gulp-notify'),
     livereload = require('gulp-livereload'),
     del = require('del');
-
-    var ejs = require("gulp-ejs")
     
 gulp.task('templates', function() {
   return gulp.src(['src/index.ejs', 'src/pages/**/*.ejs'])
