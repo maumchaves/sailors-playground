@@ -1,0 +1,89 @@
+//
+// Menu
+//
+.menu {
+  background-color: #fff;
+  transition: height 0.5s;
+  .pure-menu {
+    padding-left: 8px;
+    display: none;
+    ul {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .pure-menu-link {
+    padding: 1.8em 1em;
+    font-size: 12px;
+  }
+  .menu-icon {
+    min-height: $top-bar-height;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 1em;
+    i {
+      cursor: pointer;
+      display: table;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+//
+// Brand
+//
+.brand {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  max-height: $top-bar-height;
+  &-box {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: $primary-color;
+    color: #fff;
+    max-width: 300px;
+    padding-left: 0em;
+    font-size: 20px;
+    img {
+      max-width: 40px;
+      margin: 0 12px;
+    }
+  }
+  &-text {
+    margin-right: 12px;
+    font-weight: lighter;
+    & > :first-child  {
+      font-weight: bold;
+    }
+  }
+}
+
+// sm
+@media screen and (min-width: 35.5em) {
+  .menu {
+    .pure-menu {
+      display: flex!important;
+      ul {
+        display: inline-block;
+      }
+    }
+    .menu-icon {
+      display: none;
+    }
+  }
+}
+
+// md
+@media screen and (min-width: 48em) {
+  .brand {
+    &-box {
+      padding-left: 4.5em;
+    }
+  }
+}

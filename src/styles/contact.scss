@@ -1,0 +1,130 @@
+//
+// Contact
+//
+.contact {
+  margin-bottom: 3.5%;
+  h3 {
+    font-size: 1.4em;
+    margin: 0px;
+  }
+  .triangle-container {
+    display: none;
+    position: relative;
+    padding-top: 10%;
+    margin-top: -3%;
+    background-color: #fff;
+  }
+  .triangle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    background: linear-gradient(to left top, $light-gray 50%, transparent 50%)
+  }
+  .form-block {
+    background-color: #fff;
+    & > .pure-g {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      padding: 8% 0;
+    }
+    h4 {
+      margin: .7em 0;
+    }
+    fieldset {
+      padding: 0px;
+      font-size: 14px;
+      textarea {
+        min-height: 100px;        
+      }
+      input, textarea {
+        margin-bottom: .7em;
+        box-shadow: none;
+        border-radius: 0;
+        border: none;
+        background-color: #e8e8e8;
+        color: $gray;
+      }
+      button {
+        background-color: transparent;
+        color: #000;
+        border: solid 2px #000;
+        border-radius: 0px;
+        margin-top: .4em;
+        font-size: 14px;
+      }
+    }
+    &-content {
+      padding: 0 1em;
+    }
+  }
+  .sponsors {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .logos {
+      flex: 1;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      flex-flow: wrap;
+      .sponsor {
+        padding: 10% 0;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        h3 {
+          font-size: 1em;
+          width: 100%;
+        }
+      }
+    }
+    .triangle-container {
+      position: absolute;
+      width: 100%;
+      background-color: #000;
+      top: 100%;
+    }
+    .triangle {
+      background: linear-gradient(to right top, $light-gray 50%, transparent 50%)
+    }
+  }
+}
+
+// sm
+@media screen and (min-width: 35.5em) {
+  .contact {
+    .triangle-container {
+      display: block;
+    }
+    .form-block {
+      & > .pure-g {
+        padding: 8% 0 0 0;
+      }
+      &-content {
+        padding: 0;
+      }
+    }
+    .sponsors {
+      .logos {
+        .sponsor {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+// md
+@media screen and (min-width: 48em) {
+  .contact {
+    .sponsors {
+      .logos .sponsor h3 {
+        font-size: 1.4em;
+      }
+    }
+  }
+}

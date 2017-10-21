@@ -1,0 +1,45 @@
+//
+// Footer
+//
+.footer {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  .pure-menu-horizontal {
+    width: auto;
+    white-space: inherit;
+  }
+  .social-media {
+    padding: 2em 0;
+    a {
+      padding: 0 .5em;
+    }
+    img {
+      width: 30px;
+    }
+  }
+}
+
+// sm
+@media screen and (min-width: 35.5em) {
+  .footer {
+    .pure-menu-horizontal {
+      white-space: nowrap;
+    }
+  }
+}
+
+// md
+@media screen and (min-width: 48em) {
+  .footer {
+    justify-content: space-between;
+    flex-direction: row;
+    .social-media {
+      padding: 0px;
+      i:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

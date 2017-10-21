@@ -1,0 +1,69 @@
+//
+// Global
+//
+* {
+  // outline: 1px solid red !important;
+  box-sizing: border-box;
+}
+body {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 25px;
+}
+p {
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 20px;
+}
+.l-box {
+  padding: 1em;
+}
+.pure-g {
+  letter-spacing: inherit;
+}
+.pure-menu-link {
+  color: #000;
+}
+.bg-light-gray {
+  background-color: $light-gray;
+}
+.bg-black {
+  background-color: #000;
+  color: $light-gray;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.separator {
+  height: 1px;
+  width: 50%;
+  background-color: $text-gray;
+  margin-left: 25%;
+}
+
+// lg
+@media screen and (min-width: 64em) {
+  h2 {
+    font-size: 40px;
+  }
+}
+// .truncate {
+//   width: 250px;
+//   white-space: nowrap;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+// }
+
+// @mixin clearfix() {
+//   &::after {
+//     display: block;
+//     clear: both;
+//     content: "";
+//   }
+// }
+
+// .clearfix {
+//   @include clearfix();
+// }

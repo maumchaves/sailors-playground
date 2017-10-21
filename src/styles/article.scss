@@ -1,0 +1,93 @@
+//
+// Article
+//
+.article {
+  background-color: #fff;
+  .text-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+  }
+  &-title {
+    padding: 0 1em;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  &-text {
+    & > div {
+      padding: 0 1em;
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  h2 {
+    margin-bottom: 0;
+  }
+  h4 {
+    margin: 1em 0;
+  }
+  &-text {
+    color: $text-gray;
+  }
+  .fancy-separator {
+    margin-top: -2em;
+    position: relative;
+  }
+  .triangle-container {
+    position: relative;
+    padding-top: 10%;
+    background-color: #fff;
+  }
+  .triangle {
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    bottom: 0px;
+    background: linear-gradient(to left top, #000 50%, transparent 50%)
+  }
+}
+
+// sm
+@media screen and (min-width: 35.5em) {
+  .article {
+    &-text {
+      & > div {
+        padding: 1em;
+        p:last-child {
+          margin-bottom: 1em;
+        }
+      }
+    }
+    .fancy-separator {
+      margin-top: -6em;
+    }
+    .triangle {
+      height: 60%;
+    }
+  }
+}
+
+// lg
+@media screen and (min-width: 64em) {
+  .article {
+    .text-container {
+      padding-top: 4.5em;
+    }
+    &-title {
+      margin-bottom: 3em;
+    }
+    .fancy-separator {
+      margin-top: -10em;
+    }
+  }
+}
+
+// xl
+@media screen and (min-width: 80em) {
+  .article {
+    .fancy-separator {
+      margin-top: -12em;
+    }
+  }
+}

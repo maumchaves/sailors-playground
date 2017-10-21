@@ -1,0 +1,20 @@
+<div class="team">
+  <div class="team-title pure-g">
+    <h2 class="uppercase pure-u-1">Unser Team</h2>
+    <h4 class="uppercase pure-u-1">Subtitles von unserem team</h4>
+    <div class="pure-u-3-4"><div class="separator"></div></div>
+  </div>
+  <ul class="members">
+  <% for(var i=1; i<16; i++) {
+    var src = "./assets/team/crew" + i + ".png"; %>
+    <li>
+      <img class="pure-img" src="<%= src %>">
+      <div class="crew-info bg-light-gray l-box">
+        <h4 class="uppercase">Max Mustermann</h4>
+        <p>A smooth sea never made a skilled sailor.</p>
+      </div>
+    </li>
+  <% } %>
+    <li class="last-placeholder"></li>
+  </ul>
+</div>

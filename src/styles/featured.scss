@@ -1,0 +1,160 @@
+//
+// Featured
+//
+.featured {
+  .bg-black {
+    color: #fff;
+  }
+  .date {
+    color: $gray;
+    i {
+      vertical-align: bottom;
+    }
+    span {
+      font-size: 12px;
+    }
+  }
+  h3 {
+    color: $primary-color;
+    margin: .7em 0;
+  }
+  p {
+    margin: 0;
+  }
+  .mini-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 8em;
+    margin-top: -6em;
+  }
+  .large-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    h2 {
+      margin: 0 0 .3em;
+    }
+    h3 {
+      margin: 0;
+    }
+    h4 {
+      margin: 0.4em 0 .7em;
+    }
+    p {
+      max-width: 28em;
+    }
+    &.mai-17 {
+      background-image: url("./assets/map-17-mai.png");
+    }
+    &.okt-03 {
+      background-image: url("./assets/map-03-okt.png");
+      background-position: center;
+      flex: 1;
+    }
+  }
+  .full-img {
+    width: 100%;
+  }
+  .middle-right {
+    display: flex;
+    flex-direction: column;
+  }
+  .newsdates {
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    & > div {
+      padding: 2em 0;
+      &:first-child {
+        position: relative;
+      }
+      &:last-child {
+        background-color: #000;
+      }
+    }
+    h2 {
+      font-size: 18px;
+      margin: .2em 0 0;
+    }
+    i {
+      font-size: 35px;      
+    }
+    .triangle-container {
+      z-index: -1;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url("./assets/sailboats.png");
+      background-size: cover;
+      background-position: right;
+      top: 0;
+    }
+    .triangle {
+      height: 100%;
+      background: linear-gradient(to left top, rgba(0, 0, 0, 0.5) 50%, #000 50%)
+    }
+  }
+}
+
+// sm
+@media screen and (min-width: 35.5em) {
+  .featured {
+    .newsdates {
+      h2 {
+        font-size: 25px;
+      }
+      & > div {
+        padding: 3em 0;
+      }
+    }
+  }
+}
+
+// md
+@media screen and (min-width: 48em) {
+  .featured {
+    .mini-card {
+      padding-top: 11em;
+    }
+    .large-card {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      &.mai-17 {
+        background-position: bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #f2f5f7;
+      }
+      &.offset {
+        padding-top: 6em;
+        margin-top: -5em;
+      }
+    }
+  }
+}
+
+// sm
+@media screen and (min-width: 35.5em) {
+  .featured {
+    .large-card {
+      &.okt-03 {
+        background-position: initial;
+      }
+    }
+  }
+}
+
+// lg
+@media screen and (min-width: 64em) {
+  .featured {
+    .large-card {
+      padding: 1em;
+      &.mai-17 {
+        background-position: initial;
+        background-size: cover;
+      }
+    }
+  }
+}

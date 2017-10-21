@@ -1,0 +1,26 @@
+//
+// Variables
+//
+$max-width: 1400px;
+$primary-color: #c21833;
+$gray: #717171;
+$text-gray: #9f9f9f;
+$light-gray: #e5eaee;
+$top-bar-height: 57px; 
+
+@import "./../../node_modules/bootstrap/scss/functions";
+@import "./../../node_modules/bootstrap/scss/variables";
+@import "./../../node_modules/bootstrap/scss/mixins";
+@import "./../../node_modules/bootstrap/scss/modal";
+
+@import "global";
+@import "menu";
+@import "cover";
+@import "featured";
+@import "article";
+@import "team";
+@import "contact";
+@import "footer";
+@import "modal";
+@import "dates";
+@import "news";

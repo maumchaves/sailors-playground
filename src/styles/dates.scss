@@ -1,0 +1,48 @@
+.dates {
+  .pure-table {
+    color: $gray;
+    font-size: 14px;
+    border: none;
+    width: 100%;
+    tr {
+      border-top: solid 1px $light-gray;
+      &:last-child {
+        border-bottom: solid 1px $light-gray;
+      }
+    }
+    td {
+      border: none;
+      padding: .3em 0;
+      display: block;
+      &:first-child {
+        padding-top: 1em;
+      }
+      &:last-child {
+        padding-bottom: 1em;
+      }
+      i, span {
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 35.5em) {
+  .dates {
+    .pure-table {
+      td {
+        border-bottom: solid 1px $light-gray;
+        display: table-cell;
+        padding: 1.7em 1em;
+        &:first-child {
+          padding: 1.7em 1em;
+          padding-left: 0px;
+        }
+        &:last-child {
+          padding: 1.7em 1em;
+          padding-right: 0px;
+        }
+      }
+    }
+  }  
+}
